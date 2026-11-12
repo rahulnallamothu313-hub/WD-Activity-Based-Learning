@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grand Vista Hotel</title>
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f3ef;
+}
+header {
+    background: #18352f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+.banner {
+    background: url("https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: white;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.price {
+    color: #b18b43;
+    font-weight: bold;
+}
+form {
+    background: white;
+    padding: 25px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    background: #18352f;
+    color: white;
+    border: none;
+}
+footer {
+    background: #18352f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>SRI HARI VILLASS</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Booking</a>
+</nav>
+</header>
+<section class="banner" id="home">
+<h1>Luxury & Comfort</h1>
+<p>Experience the Best Hospitality</p>
+</section>
+<h2 style="text-align:center">Our Rooms</h2>
+<div class="rooms" id="rooms">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500">
+<h3>Deluxe Room</h3>
+<p>AC, Wi-Fi, King Bed</p>
+<p class="price">₹3,500 / Night</p>k
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500">
+<h3>Executive Room</h3>
+<p>City View, Work Desk</p>
+<p class="price">₹5,500 / Night</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500">
+<h3>Luxury Suite</h3>
+<p>Premium Bed, Bathtub</p>
+<p class="price">₹9,000 / Night</p>
+</div>
+</div>
+<h2 style="text-align:center">Hotel Facilities</h2>
+<p style="text-align:center">
+🏊 Swimming Pool | 🍽️ Restaurant |
+📶 Free Wi-Fi | 💪 Gym
+</p>
+<h2 style="text-align:center" id="booking">
+Room Reservation
+</h2>
+<form>
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required>
+<label>Email</label>
+<input type="email" placeholder="Enter email" required>
+<label>Check-In</label>
+<input type="date" required>
+<label>Check-Out</label>
+<input type="date" required>
+<label>Room Type</label>
+<select>
+<option>Deluxe Room</option>
+<option>Executive Room</option>
+<option>Luxury Suite</option>
+</select>
+<label>Guests</label>
+<input type="number" min="1" max="10" value="2">
+<button type="submit">Book Now</button>
+</form>
+<footer>
+<p>© 2026 Grand Vista Hotel</p>
+<p>contact : Grand Vista Hotel@gmail.com.</p>
+</footer>
+</body>
+</html>
