@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GYM SCHOOL</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eeeeee;
+            margin: 0;
+        }
+        header, footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav {
+            background: #F5BD02;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        h2 {
+            text-align: center;
+        }
+        .programs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            width: 220px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GYM SCHOOL</h1>
+    <p>Build Strength and Stay Healthy</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#plans">Plans</a>
+    <a href="#join">Join Us</a>
+</nav>
+
+<h2 id="home">Welcome to GYM SCHOOL</h2>
+<p style="text-align:center">
+    Train with us and improve your fitness and Health.
+</p>
+
+<h2 id="programs">Our friendly Programs</h2>
+
+<div class="programs">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRbKDDBxpFpHrLqFYb22u5iafc5giGl4Ys3bO06wJNw&s=10">
+        <h3>Cardio</h3>
+        <p>Improve stamina and fitness.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3flNVWmf48eJwGdRwXNqqKun_8m6Z0DpaFapvDVOP2Q&s=10">
+        <h3>Weight Training</h3>
+        <p>Build strength through exercise.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXxSPpJamQwsZW7VKbJAb5jamY18se2c6B4LSGNB8lA&s=10">
+        <h3>Yoga</h3>
+        <p>Improve flexibility and relaxation.</p>
+    </div>
+</div>
+
+<h2 id="plans">Membership Plans Monthly/yearly</h2>
+<table>
+    <tr>
+        <th>Plan</th>
+        <th>Duration</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Basic</td>
+        <td>1 Month</td>
+        <td>₹1000</td>
+    </tr>
+    <tr>
+        <td>Standard</td>
+        <td>3 Months</td>
+        <td>₹2500</td>
+    </tr>
+    <tr>
+        <td>Premium</td>
+        <td>6 Months</td>
+        <td>₹4500</td>
+    </tr>
+</table>
+
+<h2>Class Schedule</h2>
+<table>
+    <tr>
+        <th>Class</th>
+        <th>Time</th>
+    </tr>
+    <tr>
+        <td>Cardio</td>
+        <td>7:00 AM</td>
+    </tr>
+    <tr>
+        <td>Weight Training</td>
+        <td>9:00 AM</td>
+    </tr>
+    <tr>
+        <td>Yoga</td>
+        <td>5:00 PM</td>
+    </tr>
+</table>
+
+<h2 id="join">Join Our Gym</h2>
+<form style="text-align:center">
+    Name:
+    <input type="text" required><br><br>
+
+    Email:
+    <input type="email" required><br><br>
+
+    Plan:
+    <select>
+        <option>Basic</option>
+        <option>Standard</option>
+        <option>Premium</option>
+    </select><br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+<footer>
+    <p>Contact: powerfit@email.com</p>
+    <p>PowerFit Gym | 2026</p>
+</footer>
+
+</body>
+</html>
